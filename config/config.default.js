@@ -6,10 +6,12 @@ module.exports = appInfo => {
     mongoose: {
       clients: {
         blog: {
-          url: 'mongodb://127.0.0.1/blogtest',
+          // url: 'mongodb://127.0.0.1/blog',
+          url: 'mongodb://192.168.168.137/blog',
           options: {
-            // user: 'test', // 数据库账号
-            // pass: 'test'  // 数据库密码
+            user: 'blog', // 数据库的用户名 
+            pass: 'blog123456', // 数据库的密码,
+            authSource:"admin"
           },
         }
       }
